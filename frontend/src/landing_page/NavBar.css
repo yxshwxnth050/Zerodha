@@ -1,0 +1,25 @@
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand img {
+    width: 130px;
+}
+
+.nav-link {
+    color: #424242;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+.nav-link:hover {
+    color: #387ed1;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
