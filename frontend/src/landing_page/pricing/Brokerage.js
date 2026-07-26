@@ -8,7 +8,7 @@ function Brokerage() {
         {/* Equity Delivery */}
         <div className="col-lg-4 col-md-6 mb-5">
           <img
-            src="media/images/pricingEquity.svg"
+                src="/Media/images/pricingEquity.svg"
             alt="Equity Delivery"
             className="img-fluid mb-4"
             style={{ height: "150px" }}
@@ -24,7 +24,7 @@ function Brokerage() {
         {/* Mutual Funds */}
         <div className="col-lg-4 col-md-6 mb-5">
           <img
-            src="media/images/pricingMF.svg"
+                src="/Media/images/pricingMF.svg"
             alt="Direct Mutual Funds"
             className="img-fluid mb-4"
             style={{ height: "150px" }}
@@ -40,7 +40,7 @@ function Brokerage() {
         {/* Intraday */}
         <div className="col-lg-4 col-md-6 mb-5">
           <img
-            src="media/images/intradayTrades.svg"
+                src="/Media/images/intradayTrades.svg"
             alt="Intraday Trading"
             className="img-fluid mb-4"
             style={{ height: "150px" }}

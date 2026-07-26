@@ -51,7 +51,7 @@ function LeftSection({
           <div className="d-flex gap-3 flex-wrap">
             <a href={googlePlay}>
               <img
-                src="media/images/googlePlayBadge.svg"
+              src="/Media/images/googlePlayBadge.svg"
                 alt="Google Play"
                 className="img-fluid"
                 style={{ height: "50px" }}
@@ -60,7 +60,7 @@ function LeftSection({
 
             <a href={appStore}>
               <img
-                src="media/images/appstoreBadge.svg"
+              src="/Media/images/appstoreBadge.svg"
                 alt="App Store"
                 className="img-fluid"
                 style={{ height: "50px" }}

@@ -27,7 +27,7 @@ function Universe() {
 
         <div className="col-md-4">
           <img
-            src="Media/images/smallcaseLogo.png"
+              src="/Media/images/smallcaseLogo.png"
             alt="Smallcase"
             className="img-fluid mb-3"
             style={{ maxHeight: "40px" }}
@@ -40,7 +40,7 @@ function Universe() {
 
         <div className="col-md-4">
           <img
-            src="Media/images/streakLogo.png"
+              src="/Media/images/streakLogo.png"
             alt="Streak"
             className="img-fluid mb-3"
             style={{ maxHeight: "40px" }}
@@ -53,7 +53,7 @@ function Universe() {
 
         <div className="col-md-4">
           <img
-            src="Media/images/sensibullLogo.svg"
+              src="/Media/images/sensibullLogo.svg"
             alt="Sensibull"
             className="img-fluid mb-3"
             style={{ maxHeight: "40px" }}
@@ -66,7 +66,7 @@ function Universe() {
 
         <div className="col-md-4">
           <img
-            src="Media/images/goldenpiLogo.png"
+              src="/Media/images/goldenpiLogo.png"
             alt="GoldenPi"
             className="img-fluid mb-3"
             style={{ maxHeight: "40px" }}
@@ -78,7 +78,7 @@ function Universe() {
 
         <div className="col-md-4">
           <img
-            src="Media/images/dittoLogo.png"
+              src="/Media/images/dittoLogo.png"
             alt="Ditto"
             className="img-fluid mb-3"
             style={{ maxHeight: "40px" }}
@@ -90,7 +90,7 @@ function Universe() {
 
         <div className="col-md-4">
           <img
-            src="Media/images/zerodhaFundhouse.png"
+              src="/Media/images/zerodhaFundhouse.png"
             alt="Zerodha Fund House"
             className="img-fluid mb-3"
             style={{ maxHeight: "40px" }}

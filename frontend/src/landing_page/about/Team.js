@@ -7,7 +7,7 @@ function Team() {
         <div className="row justify-content-center g-5 align-items-center">
           <div className="col-lg-5 col-md-12 text-center">
             <img
-              src="Media\images\nithinKamath.jpg"
+                src="/Media/images/nithinKamath.jpg"
               alt="Nithin Kamath"
               className="img-fluid rounded-circle shadow-sm"
               style={{
