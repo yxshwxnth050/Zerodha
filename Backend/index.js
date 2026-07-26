@@ -67,6 +67,7 @@ const authorize = (...roles) => (req, res, next) => roles.includes(req.user.role
   : send(res, 403, null, "You do not have permission for this action");
 
 app.get("/health", (req, res) => send(res, 200, { status: "ok" }));
+app.get("/", (req, res) => send(res, 200, { service: "Kite portfolio API", status: "ok", health: "/health" }));
 
 app.post("/api/auth/register", asyncRoute(async (req, res) => {
   const { name, email, password } = req.body || {};
