@@ -28,10 +28,13 @@
 
   /* Layout */
   --radius: 6px;
-  --shadow-card: 0 1px 2px rgba(16, 28, 51, 0.04), 0 4px 16px rgba(16, 28, 51, 0.06);
+  --shadow-card:
+    0 1px 2px rgba(16, 28, 51, 0.04), 0 4px 16px rgba(16, 28, 51, 0.06);
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   background: var(--paper);
@@ -41,14 +44,21 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-display);
   font-weight: 600;
   color: var(--ink);
   margin: 0;
 }
 
-a { color: inherit; }
+a {
+  color: inherit;
+}
 
 /* Visible focus ring everywhere — accessibility floor */
 a:focus-visible,
@@ -58,13 +68,21 @@ input:focus-visible {
   outline-offset: 2px;
 }
 
-.num, .imp, td.num, td[data-num] {
+.num,
+.imp,
+td.num,
+td[data-num] {
   font-family: var(--font-data);
   font-variant-numeric: tabular-nums;
 }
 
-.profit, .gain { color: var(--gain) !important; }
-.loss { color: var(--loss) !important; }
+.profit,
+.gain {
+  color: var(--gain) !important;
+}
+.loss {
+  color: var(--loss) !important;
+}
 
 /* ---------- Top bar ---------- */
 .topbar-container {
@@ -82,7 +100,11 @@ input:focus-visible {
   gap: 28px;
 }
 
-.indices-container > div { display: flex; align-items: baseline; gap: 6px; }
+.indices-container > div {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
 
 .index {
   font-size: 0.72rem;
@@ -101,7 +123,11 @@ input:focus-visible {
   margin: 0;
 }
 
-.percent { font-family: var(--font-data); font-size: 0.78rem; margin: 0; }
+.percent {
+  font-family: var(--font-data);
+  font-size: 0.78rem;
+  margin: 0;
+}
 
 /* ---------- Menu ---------- */
 .menu-container {
@@ -110,7 +136,11 @@ input:focus-visible {
   gap: 24px;
 }
 
-.menus { display: flex; align-items: center; gap: 20px; }
+.menus {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 .menus ul {
   display: flex;
@@ -127,17 +157,28 @@ input:focus-visible {
   color: var(--ink-muted);
   padding: 8px 12px;
   border-radius: var(--radius);
-  transition: color 0.15s ease, background 0.15s ease;
+  transition:
+    color 0.15s ease,
+    background 0.15s ease;
 }
 
-.menu:hover { color: var(--ink); background: var(--paper); }
+.menu:hover {
+  color: var(--ink);
+  background: var(--paper);
+}
 
 .menu.selected {
   color: var(--ink);
   background: var(--gold-soft);
 }
 
-.menus hr { border: none; width: 1px; height: 24px; background: var(--rule); margin: 0; }
+.menus hr {
+  border: none;
+  width: 1px;
+  height: 24px;
+  background: var(--rule);
+  margin: 0;
+}
 
 .profile {
   display: flex;
@@ -148,7 +189,9 @@ input:focus-visible {
   border-radius: var(--radius);
 }
 
-.profile:hover { background: var(--paper); }
+.profile:hover {
+  background: var(--paper);
+}
 
 .avatar {
   width: 30px;
@@ -164,7 +207,11 @@ input:focus-visible {
   justify-content: center;
 }
 
-.username { font-size: 0.82rem; font-weight: 500; margin: 0; }
+.username {
+  font-size: 0.82rem;
+  font-weight: 500;
+  margin: 0;
+}
 
 /* ---------- Dashboard layout ---------- */
 .dashboard-container {
@@ -173,7 +220,9 @@ input:focus-visible {
   min-height: calc(100vh - 56px);
 }
 
-.content { padding: 24px 32px; }
+.content {
+  padding: 24px 32px;
+}
 
 .title {
   font-size: 0.95rem;
@@ -214,7 +263,11 @@ input:focus-visible {
   white-space: nowrap;
 }
 
-.list { list-style: none; margin: 0; padding: 0; }
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .list > li {
   border-bottom: 1px solid var(--rule);
@@ -222,25 +275,52 @@ input:focus-visible {
   position: relative;
 }
 
-.list > li:hover { background: var(--paper); }
+.list > li:hover {
+  background: var(--paper);
+}
 
-.item { display: flex; align-items: center; justify-content: space-between; }
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-.item p.up, .item p.down {
+.item p.up,
+.item p.down {
   font-size: 0.85rem;
   font-weight: 500;
   margin: 0;
 }
 
-.item p.up { color: var(--ink); }
-.item p.down { color: var(--ink); }
+.item p.up {
+  color: var(--ink);
+}
+.item p.down {
+  color: var(--ink);
+}
 
-.itemInfo { display: flex; align-items: center; gap: 4px; }
-.itemInfo .percent { font-size: 0.75rem; }
-.itemInfo .up { color: var(--gain); }
-.itemInfo .down { color: var(--loss); }
-.itemInfo .price { font-family: var(--font-data); font-size: 0.82rem; font-weight: 500; }
-.itemInfo .icon { font-size: 1rem !important; }
+.itemInfo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.itemInfo .percent {
+  font-size: 0.75rem;
+}
+.itemInfo .up {
+  color: var(--gain);
+}
+.itemInfo .down {
+  color: var(--loss);
+}
+.itemInfo .price {
+  font-family: var(--font-data);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+.itemInfo .icon {
+  font-size: 1rem !important;
+}
 
 .actions {
   display: flex;
@@ -256,15 +336,36 @@ input:focus-visible {
   font-size: 0.75rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease;
 }
 
-.actions .buy { color: var(--gain); border-color: var(--gain-bg); background: var(--gain-bg); }
-.actions .buy:hover { background: var(--gain); color: #fff; }
-.actions .sell { color: var(--loss); border-color: var(--loss-bg); background: var(--loss-bg); }
-.actions .sell:hover { background: var(--loss); color: #fff; }
-.actions .action { color: var(--ink-muted); padding: 5px 8px; }
-.actions .action:hover { background: var(--paper); }
+.actions .buy {
+  color: var(--gain);
+  border-color: var(--gain-bg);
+  background: var(--gain-bg);
+}
+.actions .buy:hover {
+  background: var(--gain);
+  color: #fff;
+}
+.actions .sell {
+  color: var(--loss);
+  border-color: var(--loss-bg);
+  background: var(--loss-bg);
+}
+.actions .sell:hover {
+  background: var(--loss);
+  color: #fff;
+}
+.actions .action {
+  color: var(--ink-muted);
+  padding: 5px 8px;
+}
+.actions .action:hover {
+  background: var(--paper);
+}
 
 /* ---------- Data tables (Holdings / Positions) ---------- */
 .order-table {
@@ -275,7 +376,10 @@ input:focus-visible {
   overflow: hidden;
 }
 
-.order-table table { width: 100%; border-collapse: collapse; }
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
 .order-table thead th {
   text-align: right;
@@ -290,7 +394,9 @@ input:focus-visible {
 }
 
 .order-table thead th:first-child,
-.order-table tr td:first-child { text-align: left; }
+.order-table tr td:first-child {
+  text-align: left;
+}
 
 .order-table tbody td {
   text-align: right;
@@ -300,25 +406,38 @@ input:focus-visible {
   font-family: var(--font-data);
 }
 
-.order-table tbody tr:last-child td { border-bottom: none; }
+.order-table tbody tr:last-child td {
+  border-bottom: none;
+}
 
-.order-table tbody tr { position: relative; transition: background 0.12s ease; }
-.order-table tbody tr:hover { background: var(--paper); }
+.order-table tbody tr {
+  position: relative;
+  transition: background 0.12s ease;
+}
+.order-table tbody tr:hover {
+  background: var(--paper);
+}
 
 /* signature: status rail — reads gain/loss before the numbers do */
 .order-table tbody tr::before {
   content: "";
   position: absolute;
-  left: 0; top: 0; bottom: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
   width: 3px;
   background: var(--rule);
 }
 
 .order-table tbody tr:has(td.profit)::before,
-.order-table tbody tr:has(.profit)::before { background: var(--gain); }
+.order-table tbody tr:has(.profit)::before {
+  background: var(--gain);
+}
 
 .order-table tbody tr:has(td.loss)::before,
-.order-table tbody tr:has(.loss)::before { background: var(--loss); }
+.order-table tbody tr:has(.loss)::before {
+  background: var(--loss);
+}
 
 .order-table td:first-child {
   font-family: var(--font-body);
@@ -327,7 +446,11 @@ input:focus-visible {
 }
 
 /* Summary rows (P&L / totals) below tables */
-.row { display: flex; gap: 24px; margin-top: 20px; }
+.row {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+}
 
 .row .col {
   flex: 1;
@@ -344,14 +467,29 @@ input:focus-visible {
   margin-bottom: 4px;
 }
 
-.row .col h5 span { color: var(--ink-muted); font-size: 1rem; }
-.row .col p { color: var(--ink-muted); font-size: 0.8rem; margin: 0; }
+.row .col h5 span {
+  color: var(--ink-muted);
+  font-size: 1rem;
+}
+.row .col p {
+  color: var(--ink-muted);
+  font-size: 0.8rem;
+  margin: 0;
+}
 
 /* ---------- Summary page ---------- */
-.username h6 { font-size: 1.1rem; }
-.divider { border: none; border-top: 1px solid var(--rule); margin: 16px 0 20px; }
+.username h6 {
+  font-size: 1.1rem;
+}
+.divider {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 16px 0 20px;
+}
 
-.section { margin-bottom: 4px; }
+.section {
+  margin-bottom: 4px;
+}
 .section > span p {
   font-size: 0.78rem;
   font-weight: 600;
@@ -360,17 +498,55 @@ input:focus-visible {
   letter-spacing: 0.04em;
 }
 
-.section .data { display: flex; align-items: center; gap: 32px; margin: 12px 0; }
-.section .first h3 { font-family: var(--font-data); font-size: 1.6rem; }
-.section .first p { color: var(--ink-muted); font-size: 0.8rem; margin-top: 4px; }
-.section .second p { font-size: 0.85rem; margin: 6px 0; color: var(--ink-soft); }
-.section .second p span { font-family: var(--font-data); font-weight: 500; color: var(--ink); float: right; margin-left: 24px; }
-.section hr:not(.divider) { border: none; width: 1px; align-self: stretch; background: var(--rule); }
+.section .data {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 12px 0;
+}
+.section .first h3 {
+  font-family: var(--font-data);
+  font-size: 1.6rem;
+}
+.section .first p {
+  color: var(--ink-muted);
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+.section .second p {
+  font-size: 0.85rem;
+  margin: 6px 0;
+  color: var(--ink-soft);
+}
+.section .second p span {
+  font-family: var(--font-data);
+  font-weight: 500;
+  color: var(--ink);
+  float: right;
+  margin-left: 24px;
+}
+.section hr:not(.divider) {
+  border: none;
+  width: 1px;
+  align-self: stretch;
+  background: var(--rule);
+}
 
 /* ---------- Orders (empty state) ---------- */
-.orders { display: flex; align-items: center; justify-content: center; min-height: 60vh; }
-.no-orders { text-align: center; }
-.no-orders p { color: var(--ink-muted); font-size: 0.95rem; margin-bottom: 16px; }
+.orders {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+.no-orders {
+  text-align: center;
+}
+.no-orders p {
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
 
 /* ---------- Buttons (shared) ---------- */
 .btn {
@@ -387,10 +563,21 @@ input:focus-visible {
   transition: filter 0.15s ease;
 }
 
-.btn:hover { filter: brightness(1.08); }
-.btn-green { background: var(--gain); color: #fff; }
-.btn-blue { background: var(--gold); color: #fff; }
-.btn-grey { background: var(--rule); color: var(--ink-soft); }
+.btn:hover {
+  filter: brightness(1.08);
+}
+.btn-green {
+  background: var(--gain);
+  color: #fff;
+}
+.btn-blue {
+  background: var(--gold);
+  color: #fff;
+}
+.btn-grey {
+  background: var(--rule);
+  color: var(--ink-soft);
+}
 
 /* ---------- Funds ---------- */
 .funds {
@@ -404,7 +591,12 @@ input:focus-visible {
   margin-bottom: 24px;
 }
 
-.funds p { flex: 1; color: var(--ink-soft); font-size: 0.88rem; margin: 0; }
+.funds p {
+  flex: 1;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  margin: 0;
+}
 
 .table {
   background: var(--surface);
@@ -420,10 +612,20 @@ input:focus-visible {
   font-size: 0.85rem;
 }
 
-.table .data p:first-child { color: var(--ink-soft); }
-.table .data .imp { font-weight: 600; }
-.table .data .colored { color: var(--gain); }
-.table hr { border: none; border-top: 1px solid var(--rule); margin: 2px 0; }
+.table .data p:first-child {
+  color: var(--ink-soft);
+}
+.table .data .imp {
+  font-weight: 600;
+}
+.table .data .colored {
+  color: var(--gain);
+}
+.table hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2px 0;
+}
 
 .commodity {
   background: var(--surface);
@@ -433,15 +635,118 @@ input:focus-visible {
   text-align: center;
 }
 
-.commodity p { color: var(--ink-muted); margin-bottom: 14px; }
+.commodity p {
+  color: var(--ink-muted);
+  margin-bottom: 14px;
+}
 
 /* ---------- Responsive floor ---------- */
 @media (max-width: 900px) {
-  .dashboard-container { grid-template-columns: 1fr; }
-  .watchlist-container { border-right: none; border-bottom: 1px solid var(--rule); }
-  .row { flex-direction: column; }
+  .dashboard-container {
+    grid-template-columns: 1fr;
+  }
+  .watchlist-container {
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .row {
+    flex-direction: column;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; animation: none !important; }
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+.trade-pulse-body {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.trade-pulse-ring {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+.ring-buy {
+  background: var(--gain, #13a875);
+}
+.ring-sell {
+  background: var(--loss, #df5969);
+}
+.trade-pulse-history {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  font-size: 12px;
+  color: var(--ink-muted, #6b7280);
+  display: grid;
+  gap: 6px;
+}
+.trade-pulse-history li span {
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+@keyframes tradePulseFlash {
+  0% {
+    box-shadow: 0 0 0 0 rgba(19, 168, 117, 0.35);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(19, 168, 117, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(19, 168, 117, 0);
+  }
+}
+.pulse-buy {
+  animation: tradePulseFlash 0.9s ease-out;
+}
+.pulse-sell {
+  animation: tradePulseFlash 0.9s ease-out;
+}
+.pulse-sell {
+  box-shadow: 0 0 0 0 rgba(223, 89, 105, 0.35);
+}
+
+.watch-search-results {
+  display: grid;
+  gap: 4px;
+  margin: -8px 0 14px;
+  border: 1px solid var(--rule, #e3e6ea);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.watch-search-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  font-size: 12px;
+  background: #fff;
+}
+.watch-search-row:not(:last-child) {
+  border-bottom: 1px solid var(--rule, #e3e6ea);
+}
+.watch-search-row button {
+  border: none;
+  background: var(--gold-soft, #f4ecd8);
+  color: var(--gold, #a9812e);
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.watch-unpin {
+  border: none;
+  background: none;
+  color: var(--ink-muted, #6b7280);
+  cursor: pointer;
+  margin-left: 4px;
 }
